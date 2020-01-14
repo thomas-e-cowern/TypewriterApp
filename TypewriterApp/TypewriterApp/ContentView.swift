@@ -12,8 +12,9 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             Color(red: 95/255, green: 13/255, blue: 64/255)
-            VStack {            Image("typewriter").resizable().aspectRatio(contentMode: .fit).clipShape(Circle())
-                Text("Hello, World!")
+            VStack {
+                Text("Type Writer").fontWeight(.bold).font(.system(size: 40)).padding(); Image("typewriter").resizable().aspectRatio(contentMode: .fit).clipShape(Circle())
+                Text("App").fontWeight(.bold).font(.system(size: 40)).padding()
             }
         }.edgesIgnoringSafeArea(.all)
     }
